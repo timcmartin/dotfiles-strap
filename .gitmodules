@@ -4,3 +4,6 @@
 [submodule "dotfiles_private"]
 	path = dotfiles_private
 	url = git@timcbitbucket:timcmartin/dotfiles_private.git
+[submodule "vimbundles"]
+	path = vimbundles
+	url = https://github.com/timcmartin/vimbundles.git
