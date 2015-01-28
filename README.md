@@ -7,6 +7,8 @@ This config makes use of powerline and tmux-powerline.
 
 It also references a private bitbucket repo that contains private_dotfiles.
 
+I have also included my preferred vimbundles as a submodule.  Upon running ./install, it will init and update all vimbundles as well.
+
 ## Setup:
 
 1. git clone this project
