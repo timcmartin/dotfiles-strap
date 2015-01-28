@@ -1,28 +1,24 @@
-# Dotmatrix
+# Dotfiles
+
+This repository borrows heavily from [jcarley/dotmatrix](https://github.com/jcarley/dotmatrix),
+but was tweaked for use with [Boxen](https://boxen.github.com/) and [Dotbot](https://github.com/anishathalye/dotbot).
 
 This config makes use of powerline and tmux-powerline.
-You will also need to create a crypt_config.vim file and a
-crypt_tmux.conf file to house password sensitive information not stored in GIT.
+It references a private bitbucket repo that contains private_dotfiles.
 
 ## Setup:
 
 1. git clone this project
-2. cd <project directory>/bin/
-3. run hlink
-4. run vimbundles.sh
 
-##  Gotchas:
+```
+  git clone https://github.com/timcmartin/dotfiles.git ~/.dotfiles
+```
 
-For git completion, make sure you've run `brew install bash-completion` and sourced ~/.bashrc
+2. Change into the ~/.dotfiles directory and run ./install
 
-## Setup Effortless Ctags with Git
-http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html
+```
+  cd ~/.dotfiles
+  ./install
+```
 
-## VIM
-
-To update vim plugins:
-
-    cd ~/.vimbundles
-    find . -maxdepth 1 -type d -exec sh -c '(cd {} && git pull)' ';'
-
-Line 2 will search change in and out of all directories and do a git pull on the repos.
+Dotbot will update the submodules and create the requisite symlinks.
