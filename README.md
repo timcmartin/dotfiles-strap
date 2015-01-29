@@ -31,3 +31,9 @@ Dotbot will update the submodules and create the requisite symlinks.
 1. No need to do anything with this repo.
 
 2. Clone the boxen repo and it will take care of everyting.
+
+## Editing:
+
+To edit the functionality, of Dotbot, edit the `install.conf.yaml` file.
+
+See [Dotbot](https://github.com/anishathalye/dotbot) for more information and examples.
