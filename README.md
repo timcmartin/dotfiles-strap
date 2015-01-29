@@ -4,7 +4,10 @@ This repository borrows heavily from [jcarley/dotmatrix](https://github.com/jcar
 but was tweaked for use with [Boxen](https://boxen.github.com/) and [Dotbot](https://github.com/anishathalye/dotbot).
 
 This config makes use of powerline and tmux-powerline.
-It references a private bitbucket repo that contains private_dotfiles.
+
+It also references a private bitbucket repo that contains private_dotfiles.
+
+I have also included my preferred vimbundles as a submodule.  Upon running ./install, it will init and update all vimbundles as well.
 
 ## Setup:
 
