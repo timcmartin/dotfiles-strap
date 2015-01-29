@@ -7,9 +7,9 @@ This config makes use of powerline and tmux-powerline.
 
 It also references a private bitbucket repo that contains private_dotfiles.
 
-I have also included my preferred vimbundles as a submodule.  Upon running ./install, it will init and update all vimbundles as well.
+I have included my preferred vimbundles as a submodule.  Upon running ./install, it will init and update all vimbundles as well.
 
-## Setup:
+## Standalone Setup: (without Boxen)
 
 1. git clone this project
 
@@ -25,3 +25,9 @@ I have also included my preferred vimbundles as a submodule.  Upon running ./ins
 ```
 
 Dotbot will update the submodules and create the requisite symlinks.
+
+## Boxen Setup:
+
+1. No need to do anything with this repo.
+
+2. Clone the boxen repo and it will take care of everyting.
