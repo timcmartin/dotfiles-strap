@@ -28,5 +28,4 @@
     ~/.crypt_tmux: "dotfiles_private/.crypt_tmux"
     ~/crypt_config.vim: "dotfiles_private/crypt_config.vim"
     ~/.ssh: "dotfiles_private/.ssh/"
-    ~/Documents: "/Users/tmartin/Dropbox/Getty/Documents/"
     ~/.vimbundles: "vimbundles/"
