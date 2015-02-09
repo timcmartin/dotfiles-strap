@@ -1,6 +1,6 @@
-runtime! autoload/pathogen.vim
+execute pathogen#infect('~/.vimbundles/{}')
+
 if exists('g:loaded_pathogen')
-  call pathogen#infect('/Users/tcmartin/.vimbundles/{}')
   call pathogen#helptags()
 endif
 
