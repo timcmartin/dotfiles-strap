@@ -6,7 +6,8 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="tim"
+ZSH_THEME="muse"
+#ZSH_THEME="tim"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -19,6 +20,7 @@ fi
 
 # Powerline Support
 # ~/.vimbundles/powerline/powerline/bindings/zsh/powerline.zsh
+source /Users/timcmartin/Dotfiles/powerline/powerline/bindings/zsh/powerline.zsh
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -49,23 +51,17 @@ fi
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails ruby sublime brew vagrant postgres redis-cli bundler golang git git-flow git-extras last-working-dir osx ssh-agent web-search)
+plugins=(rails ruby sublime brew vagrant postgres redis-cli bundler golang git git-flow git-extras last-working-dir osx ssh-agent web-search zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
-
-# Syntax Highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# ESP Commands
-eval "$(/Users/tmartin/Code/Getty/ESP/scripts/bin/esp init -)"
 
 zrcl="$HOME/.zshrc.local"
 [[ ! -a $zrcl ]] || source $zrcl
 
 # Tmux Powerline
 # PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
-PROMPT="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+#PROMPT="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
 source ~/.profile
 export PATH=/usr/local/sbin:$PATH
