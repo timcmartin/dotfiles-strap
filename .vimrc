@@ -402,7 +402,7 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['scss'] }
 
 " vimwiki
-let g:vimwiki_list = [{'path': '~/dropbox/vimwiki/'}]
+let g:vimwiki_list = [{'path': '~/dropbox/vimwiki/personal'}, {'path': '~/dropbox/vimwiki/house'}, {'path': '~/dropbox/vimwiki/cabin'}, {'path': '~/dropbox/vimwiki/getty'}, {'path': '~/dropbox/vimwiki/travel'}, {'path': '~/dropbox/vimwiki/work', 'ext': '.md'}]
 
 " More Autocommands
 if has("autocmd")
@@ -417,7 +417,7 @@ if has("autocmd")
         \ endif
 
   " Fix trailing whitespace in my most used programming langauges
-  autocmd BufWritePre *.py,*.coffee,*.rb,*.feature,*.slim,*.md silent! :StripTrailingWhiteSpace
+  autocmd BufWritePre *.py,*.coffee,*.rb,*.feature,*.slim,*.md,*.wiki silent! :StripTrailingWhiteSpace
 endif
 
 " Strip Trailing White Space
@@ -438,6 +438,7 @@ endfunction
 
 "strip all trailing white space
 command! StripTrailingWhiteSpace :call Preserve("%s/\\s\\+$//e")<CR>
+command! Trim :call Preserve("%s/\\s\\+$//e")<CR>
 
 " Paste using Paste Mode
 " Keeps indentation in source.
