@@ -22,6 +22,9 @@ fi
 # ~/.vimbundles/powerline/powerline/bindings/zsh/powerline.zsh
 source /Users/timcmartin/Dotfiles/powerline/powerline/bindings/zsh/powerline.zsh
 
+# Vim Editor
+export EDITOR='vim'
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -67,5 +70,9 @@ source ~/.profile
 export PATH=/usr/local/sbin:$PATH
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
+# Tmuxinator
+source ~/.tmuxinator/tmuxinator.zsh
+
+# Need to fix this
 # TODO
 export PATH=$PATH:"/usr/local/Cellar/todo-txt/2.10/bin"
