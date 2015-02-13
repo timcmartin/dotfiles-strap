@@ -75,3 +75,5 @@ source ~/.tmuxinator/tmuxinator.zsh
 # Need to fix this
 # TODO
 export PATH=$PATH:"/usr/local/Cellar/todo-txt/2.10/bin"
+export PATH="/opt/boxen/rbenv/bin:$PATH"
+eval "$(rbenv init -)"
