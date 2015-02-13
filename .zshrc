@@ -68,7 +68,6 @@ zrcl="$HOME/.zshrc.local"
 
 source ~/.profile
 export PATH=/usr/local/sbin:$PATH
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Tmuxinator
 source ~/.tmuxinator/tmuxinator.zsh
