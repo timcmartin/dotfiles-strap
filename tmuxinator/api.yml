@@ -1,7 +1,7 @@
 # ~/.tmuxinator/api.yml
 
 name: api
-root: ~/src/api
+root: ~/src/api/
 
 # Optional tmux socket
 # socket_name: foo
@@ -11,6 +11,7 @@ root: ~/src/api
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
 # pre_window: rbenv shell 2.0.0-p247
+pre_window: cd ~/src/api
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -25,5 +26,7 @@ windows:
         - vim
         - guard
   - server:
+      layout: even-vertical
       panes:
-        - rails server
+        - rails s
+        - gst

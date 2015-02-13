@@ -25,6 +25,9 @@ source /Users/timcmartin/Dotfiles/powerline/powerline/bindings/zsh/powerline.zsh
 # Vim Editor
 export EDITOR='vim'
 
+# Disable auto-title for Tmuxinator
+export DISABLE_AUTO_TITLE=true
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -54,7 +57,7 @@ export EDITOR='vim'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails ruby sublime brew vagrant postgres redis-cli bundler golang git git-flow git-extras last-working-dir osx ssh-agent web-search zsh-syntax-highlighting)
+plugins=(rails ruby sublime brew vagrant postgres redis-cli bundler golang git git-flow git-extras last-working-dir osx ssh-agent web-search zsh-syntax-highlighting tmuxinator)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
@@ -70,7 +73,7 @@ source ~/.profile
 export PATH=/usr/local/sbin:$PATH
 
 # Tmuxinator
-source ~/.tmuxinator/tmuxinator.zsh
+#source ~/.tmuxinator/tmuxinator.zsh
 
 # Need to fix this
 # TODO
