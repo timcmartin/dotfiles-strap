@@ -71,7 +71,7 @@ source ~/.profile
 export PATH=/usr/local/sbin:$PATH
 
 # todo.txt - this needs to be installed still
-#export PATH=$PATH:"/usr/local/Cellar/todo-txt/2.10/bin"
+export PATH=$PATH:"/opt/boxen/homebrew/Cellar/todo-txt/2.10/bin"
 
 export PATH="/opt/boxen/rbenv/bin:$PATH"
 eval "$(rbenv init -)"
