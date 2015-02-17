@@ -109,16 +109,9 @@ set scrolloff=3   " Keep three lines below the last line when scrolling
 
 " Persistent Undo
 if has('persistent_undo')
+  set undodir=~/.vimbackupdir/.undo
   set undofile
-  set undodir=~/.vim/.undo
 endif
-
-" TODO - Not working
-" Underline the current line with '-'
-" nmap <silent> <leader>ul :t.\|s/./-/g\|:nohls<cr>
-
-" Underline the current line with '='
-" nmap <silent> <leader>uul :t.\|s/./=/g\|:nohls<cr>
 
 au! BufRead,BufNewFile *.rb
 au! BufRead,BufNewFile *.xml

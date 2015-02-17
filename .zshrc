@@ -25,9 +25,6 @@ source /Users/timcmartin/Dotfiles/powerline/powerline/bindings/zsh/powerline.zsh
 # Vim Editor
 export EDITOR='vim'
 
-# Disable auto-title for Tmuxinator
-export DISABLE_AUTO_TITLE=true
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -35,13 +32,14 @@ export DISABLE_AUTO_TITLE=true
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how often before auto-updates occur? (in days)
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=7
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
 
 # Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
+# Recommended for Tmuxinator
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want to disable command autocorrection
 # DISABLE_CORRECTION="true"
@@ -72,11 +70,8 @@ zrcl="$HOME/.zshrc.local"
 source ~/.profile
 export PATH=/usr/local/sbin:$PATH
 
-# Tmuxinator
-#source ~/.tmuxinator/tmuxinator.zsh
+# todo.txt - this needs to be installed still
+#export PATH=$PATH:"/usr/local/Cellar/todo-txt/2.10/bin"
 
-# Need to fix this
-# TODO
-export PATH=$PATH:"/usr/local/Cellar/todo-txt/2.10/bin"
 export PATH="/opt/boxen/rbenv/bin:$PATH"
 eval "$(rbenv init -)"

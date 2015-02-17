@@ -26,7 +26,7 @@ windows:
         - vim
         - guard
   - server:
-      layout: even-vertical
+      layout: even-horizontal
       panes:
         - rails s
         - gst
