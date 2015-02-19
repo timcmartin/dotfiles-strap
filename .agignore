@@ -51,12 +51,6 @@ rerun.txt
 # Ignore VCR cassettes
 /features/vcr/cassettes
 
-# Ignore Javascript
-*.js
-*/*.js
-*/*/*.js
-*/*/*/*.js
-
 # Ignore iStock CSS
 *.css
 */*.css

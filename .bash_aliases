@@ -204,3 +204,15 @@ alias wurstwings='cd ~/Code/Tim/wurstwings'
 
 # start wurstwings redis
 alias wwredis='redis-server /usr/local/etc/redis.conf'
+
+# personal: cd dotfiles
+alias dotfiles='cd ~/Dotfiles'
+
+# personal: cd code
+alias mycode='cd ~/Code'
+
+# six safety: cd api
+alias api='cd ~/src/api'
+
+# six safety: cd ui
+alias ui='cd ~/src/ui'

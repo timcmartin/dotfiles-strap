@@ -32,13 +32,14 @@ export EDITOR='vim'
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how often before auto-updates occur? (in days)
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=7
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
 
 # Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
+# Recommended for Tmuxinator
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want to disable command autocorrection
 # DISABLE_CORRECTION="true"
@@ -54,7 +55,7 @@ export EDITOR='vim'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails ruby sublime brew vagrant postgres redis-cli bundler golang git git-flow git-extras last-working-dir osx ssh-agent web-search zsh-syntax-highlighting)
+plugins=(rails ruby sublime brew vagrant postgres redis-cli bundler golang git git-flow git-extras last-working-dir osx ssh-agent web-search zsh-syntax-highlighting tmuxinator)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
@@ -68,11 +69,9 @@ zrcl="$HOME/.zshrc.local"
 
 source ~/.profile
 export PATH=/usr/local/sbin:$PATH
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-# Tmuxinator
-source ~/.tmuxinator/tmuxinator.zsh
+# todo.txt - this needs to be installed still
+export PATH=$PATH:"/opt/boxen/homebrew/Cellar/todo-txt/2.10/bin"
 
-# Need to fix this
-# TODO
-export PATH=$PATH:"/usr/local/Cellar/todo-txt/2.10/bin"
+export PATH="/opt/boxen/rbenv/bin:$PATH"
+eval "$(rbenv init -)"
