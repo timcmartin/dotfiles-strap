@@ -37,8 +37,7 @@
   status = auto
   ui = auto
 [core]
-  excludesfile = /home/tim/.gitignore
-  #excludesfile = ~/.cvsignore
+  excludesfile = /opt/boxen/config/git/gitignore
   editor = vim
   whitespace = warn
 [diff]
@@ -87,7 +86,7 @@
 [init]
 	templatedir = ~/.git_template
 [difftool "sourcetree"]
-	cmd = mvimdiff \"$LOCAL\" \"$REMOTE\"
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
