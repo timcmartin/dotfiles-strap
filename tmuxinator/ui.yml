@@ -1,7 +1,7 @@
-# ~/.tmuxinator/api-ui.yml
+# ~/.tmuxinator/ui.yml
 
-name: api
-root: ~/src/api/
+name: ui
+root: ~/src/ui/
 
 # Optional tmux socket
 # socket_name: foo
@@ -11,24 +11,28 @@ root: ~/src/api/
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
 # pre_window: rbenv shell 2.0.0-p247
-pre_window: cd ~/src/api
+pre_window: cd ~/src/ui
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
 
 windows:
   - editor:
       layout: main-vertical
       panes:
-        - guard
         - vim
   - server:
       layout: even-horizontal
       panes:
+        - guard
+        - redis-server
         - rails s
-  - client:
+  - logs:
       layout: even-horizontal
       panes:
-        - vim:
-          - cd ~/Code/chat
-          - vim
-        - server:
-          - cd ~/Code/chat
-          - rails s -p 3001
+        - gst
+        - tail -f log/development.log
+        - tail -f log/test.log
