@@ -23,10 +23,16 @@ windows:
   - editor:
       layout: main-vertical
       panes:
-        - guard
         - vim
   - server:
       layout: even-horizontal
       panes:
+        - guard
+        - redis-server
         - rails s
+  - logs:
+      layout: even-horizontal
+      panes:
         - gst
+        - tail -f log/development.log
+        - tail -f log/test.log

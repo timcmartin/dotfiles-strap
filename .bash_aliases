@@ -190,17 +190,8 @@ alias postgres='/Applications/Postgres.app/Contents/Versions/9.3/bin/psql -p5432
 # reset memcache
 alias reset-memcache='memcached -u memcached -d -m 30 -l 127.0.0.1 -p 11211'
 
-# cd to submission
-alias submission='cd ~/Code/Getty/ESP/submission'
-
-# cd to ice
-alias ice='cd ~/Code/Getty/ESP/ice'
-
-# cd to istock codebase
-alias istock='cd ~/Code/Getty/istock/codebase/istock'
-
 # cd to wurstwings codebase
-alias wurstwings='cd ~/Code/Tim/wurstwings'
+alias wurstwings='cd ~/Code/wurstwings'
 
 # start wurstwings redis
 alias wwredis='redis-server /usr/local/etc/redis.conf'
@@ -216,3 +207,6 @@ alias api='cd ~/src/api'
 
 # six safety: cd ui
 alias ui='cd ~/src/ui'
+
+# six safety boxen repo: cd repo
+alias ourboxen='cd /opt/boxen/repo'
