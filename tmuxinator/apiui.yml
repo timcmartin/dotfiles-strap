@@ -30,13 +30,13 @@ windows:
       layout: even-horizontal
       panes:
         - guard:
-          - cd ~/src/ui
+          - cd ~/src/api
           - guard
         - redis:
-          - cd ~/src/ui
+          - cd ~/src/api
           - redis-server
         - rails:
-          - cd ~/src/ui
+          - cd ~/src/api
           - rails s
   - api-logs:
       layout: even-horizontal
