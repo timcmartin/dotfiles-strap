@@ -213,3 +213,9 @@ alias ourboxen='cd /opt/boxen/repo'
 
 # update submodules
 alias updatesubs='git submodule foreach --recursive git fetch'
+
+# tail API-Sandbox log
+alias tailapi='cx tail -s "API-Sandbox" -e staging Dove staging.log'
+
+# tail UI-Sandbox log
+alias tailui='cx tail -s "UI-Sandbox" -e staging Dolphin staging.log'
