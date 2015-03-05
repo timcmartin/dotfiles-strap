@@ -219,3 +219,9 @@ alias tailapi='cx tail -s "API-Sandbox" -e staging Dove staging.log'
 
 # tail UI-Sandbox log
 alias tailui='cx tail -s "UI-Sandbox" -e staging Dolphin staging.log'
+
+# ssh API-Sandbox
+alias sshapi='cx ssh -s "API-Sandbox" -e staging Dove'
+
+# ssh UI-Sandbox
+alias sshui='cx ssh -s "UI-Sandbox" -e staging Dolphin'
