@@ -26,15 +26,24 @@ windows:
         - vim:
           - cd ~/src/api
           - vim
-  - api-server:
+  - api-terminal:
       layout: even-horizontal
       panes:
         - guard:
           - cd ~/src/api
           - guard
+        - git:
+          - cd ~/src/api
+          - gst
+  - api-server:
+      layout: even-horizontal
+      panes:
         - redis:
           - cd ~/src/api
           - redis-server
+        - redis-monitor:
+          - cd ~/src/api
+          - redis-cli monitor
         - rails:
           - cd ~/src/api
           - rails s
