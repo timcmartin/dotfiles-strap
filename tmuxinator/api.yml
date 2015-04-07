@@ -20,19 +20,40 @@ pre_window: cd ~/src/api
 # tmux_command: byobu
 
 windows:
-  - editor:
+  - api-editor:
       layout: main-vertical
       panes:
         - vim
-  - server:
+  - api-terminal:
       layout: even-horizontal
       panes:
-        - guard
-        - redis-server
-        - rails s
-  - logs:
+        - guard:
+          - cd ~/src/api
+          - guard
+        - git:
+          - cd ~/src/api
+          - gst
+  - api-server:
       layout: even-horizontal
       panes:
-        - gst
-        - tail -f log/development.log
-        - tail -f log/test.log
+        - redis:
+          - cd ~/src/api
+          - redis-server
+        - redis-monitor:
+          - cd ~/src/api
+          - redis-cli monitor
+        - rails:
+          - cd ~/src/api
+          - rails s
+  - api-logs:
+      layout: even-horizontal
+      panes:
+        - git:
+          - cd ~/src/api
+          - gst
+        - devlog:
+          - cd ~/src/api
+          - tail -f log/development.log
+        - testlog:
+          - cd ~/src/api
+          - tail -f log/test.log
