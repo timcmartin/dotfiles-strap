@@ -3,3 +3,4 @@ crypt_config.vim
 .crypt_tmux
 tags
 .vmailrc
+dump.rdb

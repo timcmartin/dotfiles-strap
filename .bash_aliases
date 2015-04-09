@@ -227,7 +227,7 @@ alias sshapi='cx ssh -s "API-Sandbox" -e staging Dove'
 alias sshui='cx ssh -s "UI-Sandbox" -e staging Dolphin'
 
 # Start Redis
-alias redis-start='redis-server'
+# Use redisup
 
 # Shutdown Redis
-alias redis-stop='redis-cli shutdown'
+alias redisstop='redis-cli shutdown'
