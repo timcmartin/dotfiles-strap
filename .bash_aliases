@@ -231,3 +231,6 @@ alias sshui='cx ssh -s "UI-Sandbox" -e staging Dolphin'
 
 # Shutdown Redis
 alias redisstop='redis-cli shutdown'
+
+# Clear Logs
+alias clearlogs='rake log:clear'

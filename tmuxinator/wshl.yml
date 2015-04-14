@@ -24,15 +24,29 @@ windows:
       layout: main-vertical
       panes:
         - vim
+  - terminal:
+      layout: even-horizontal
+      panes:
+        - guard:
+          - cd ~/Code/wshl/
+          - guard
+        - git:
+          - cd ~/Code/wshl/
+          - gst
   - server:
       layout: even-horizontal
       panes:
-        - guard
-        - redis-server
-        - rails s
+        - redis:
+          - cd ~/Code/wshl
+          - redisup
+        - redis-monitor:
+          - cd ~/Code/wshl
+          - redis-cli monitor
+        - rails:
+          - cd ~/Code/wshl
+          - rails s
   - logs:
       layout: even-horizontal
       panes:
-        - gst
         - tail -f log/development.log
         - tail -f log/test.log

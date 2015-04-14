@@ -38,7 +38,7 @@ windows:
       panes:
         - redis:
           - cd ~/src/api
-          - redis-server
+          - redisup
         - redis-monitor:
           - cd ~/src/api
           - redis-cli monitor
@@ -48,9 +48,9 @@ windows:
   - api-logs:
       layout: even-horizontal
       panes:
-        - git:
+        - console:
           - cd ~/src/api
-          - gst
+          - pry
         - devlog:
           - cd ~/src/api
           - tail -f log/development.log

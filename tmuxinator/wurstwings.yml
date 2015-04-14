@@ -24,15 +24,29 @@ windows:
       layout: main-vertical
       panes:
         - vim
+  - terminal:
+      layout: even-horizontal
+      panes:
+        - guard:
+          - cd ~/Code/wurstwings/
+          - guard
+        - git:
+          - cd ~/Code/wurstwings/
+          - gst
   - server:
       layout: even-horizontal
       panes:
-        - guard
-        - redis-server
-        - rails s
+        - redis:
+          - cd ~/Code/wurstwings
+          - redisup
+        - redis-monitor:
+          - cd ~/Code/wurstwings
+          - redis-cli monitor
+        - rails:
+          - cd ~/Code/wurstwings
+          - rails s
   - logs:
       layout: even-horizontal
       panes:
-        - gst
         - tail -f log/development.log
         - tail -f log/test.log
