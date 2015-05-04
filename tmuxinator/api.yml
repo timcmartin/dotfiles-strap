@@ -57,3 +57,11 @@ windows:
         - testlog:
           - cd ~/src/api
           - tail -f log/test.log
+  - ui:
+      layout: even-horizontal
+      panes:
+        - ui-editor:
+          - cd ~/src/ui
+          - vim
+        - ui-console:
+          - cd ~/src/ui
