@@ -234,3 +234,6 @@ alias redisstop='redis-cli shutdown'
 
 # Clear Logs
 alias clearlogs='rake log:clear'
+
+# Find Postgres
+alias findpg='ps -ax | grep -i postgres'
