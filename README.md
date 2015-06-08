@@ -14,14 +14,14 @@ I have included my preferred vimbundles as a submodule.  Upon running ./install,
 1. git clone this project
 
 ```
-  git clone https://github.com/timcmartin/dotfiles.git ~/.dotfiles
+  git clone https://github.com/timcmartin/dotfiles.git ~/Dotfiles
 ```
 
-2. Change into the ~/.dotfiles directory and run ./install
+2. Change into the ~/.dotfiles directory and run scripts/./install
 
 ```
-  cd ~/.dotfiles
-  ./install
+  cd ~/Dotfiles
+  scripts/./install
 ```
 
 Dotbot will update the submodules and create the requisite symlinks.
