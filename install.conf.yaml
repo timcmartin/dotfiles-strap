@@ -1,29 +1,75 @@
+- clean:
+    - "~"
+
+- link:
+    ~/.agignore:
+      relink: true
+      path: agignore
+    ~/.bash_aliases:
+      relink: true
+      path: bash_aliases
+    ~/.bashrc:
+      relink: true
+      path: bashrc
+    ~/.ctags:
+      relink: true
+      path: ctags
+    ~/.gemrc:
+      relink: true
+      path: gemrc
+    ~/.git_template:
+      relink: true
+      path: git_template/
+    ~/.gitconfig:
+      relink: true
+      path: gitconfig
+    ~/.irbrc:
+      relink: true
+      path: irbrc
+    ~/.pair:
+      relink: true
+      path: pair
+    ~/.rdebugrc:
+      relink: true
+      path: rdebugrc
+    ~/.rspec:
+      relink: true
+      path: rspec
+    ~/.tmux.conf:
+      relink: true
+      path: tmux.conf
+    ~/.todo.cfg:
+      relink: true
+      path: todo.cfg
+    ~/.vim/plugin:
+      relink: true
+      path: vim/plugin/
+    ~/.vimrc:
+      relink: true
+      path: vimrc
+    ~/.watchr.rb:
+      relink: true
+      path: watchr.rb
+    ~/.zsh:
+      relink: true
+      path: zsh
+    ~/.zshrc:
+      relink: true
+      path: zshrc
+    ~/.crypt_tmux:
+      relink: true
+      path: dotfiles_private/crypt_tmux
+    ~/crypt_config.vim:
+      relink: true
+      path: dotfiles_private/crypt_config.vim
+    ~/.vimbundles:
+      relink: true
+      path: vimbundles/
+    ~/.thymerc:
+      relink: true
+      path: thymerc
+
 - shell:
     -
       - "git submodule update --init --recursive"
       - "Installing submodules"
-- clean:
-    - "~"
-- link:
-    ~/.agignore: "agignore"
-    ~/.bash_aliases: "bash_aliases"
-    ~/.bashrc: "bashrc"
-    ~/.ctags: "ctags"
-    ~/.gemrc: "gemrc"
-    ~/.git_template: "git_template/"
-    ~/.gitconfig: "gitconfig"
-    ~/.irbrc: "irbrc"
-    ~/.pair: "pair"
-    ~/.rdebugrc: "rdebugrc"
-    ~/.rspec: "rspec"
-    ~/.tmux.conf: "tmux.conf"
-    ~/.todo.cfg: "todo.cfg"
-    ~/.vim/plugin: "vim/plugin/"
-    ~/.vimrc: "vimrc"
-    ~/.watchr.rb: "watchr.rb"
-    ~/.zsh: "zsh"
-    ~/.zshrc: "zshrc"
-    ~/.crypt_tmux: "dotfiles_private/crypt_tmux"
-    ~/crypt_config.vim: "dotfiles_private/crypt_config.vim"
-    ~/.vimbundles: "vimbundles/"
-    ~/.thymerc: "thymerc"
