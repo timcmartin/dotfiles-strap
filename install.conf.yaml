@@ -68,9 +68,9 @@
     ~/.thymerc:
       relink: true
       path: thymerc
-    ~/Library/LaunchAgents/local.update_dotfiles.pp:
+    ~/Library/LaunchAgents/local.update_dotfiles.plist:
       relink: true
-      path: properties/local.update_dotfiles.pp
+      path: properties/local.update_dotfiles.plist
 
 - shell:
     -
