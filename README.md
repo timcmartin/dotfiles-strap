@@ -17,7 +17,7 @@ I have included my preferred vimbundles as a submodule.  Upon running ./install,
   git clone https://github.com/timcmartin/dotfiles.git ~/Dotfiles
 ```
 
-2. Change into the ~/.dotfiles directory and run scripts/./install
+2. Change into the ~/.dotfiles directory and run ./install
 
 ```
   cd ~/Dotfiles
@@ -37,3 +37,8 @@ Dotbot will update the submodules and create the requisite symlinks.
 To edit the functionality, of Dotbot, edit the `install.conf.yaml` file.
 
 See [Dotbot](https://github.com/anishathalye/dotbot) for more information and examples.
+
+## Lanuchd Plist
+
+There is a `subcron.sh` job and a properties job in the `properties` directory.
+Dotbot will automatically symlink this to the LaunchAgents directory and every morning at 7 all Dotfiles submodules will be updated.
