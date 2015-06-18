@@ -18,10 +18,6 @@ else
     print "404: ~/.bash_aliases not found."
 fi
 
-# Powerline Support
-# ~/.vimbundles/powerline/powerline/bindings/zsh/powerline.zsh
-source /Users/timcmartin/Dotfiles/powerline/powerline/bindings/zsh/powerline.zsh
-
 # Vim Editor
 export EDITOR='vim'
 
@@ -62,10 +58,6 @@ unsetopt correct_all
 
 zrcl="$HOME/.zshrc.local"
 [[ ! -a $zrcl ]] || source $zrcl
-
-# Tmux Powerline
-# PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
-#PROMPT="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
 source ~/.profile
 export PATH=/usr/local/sbin:$PATH

@@ -41,9 +41,9 @@
     ~/.todo.cfg:
       relink: true
       path: todo.cfg
-    ~/.vim/plugin:
+    ~/.vim:
       relink: true
-      path: vim/plugin/
+      path: vim/
     ~/.vimrc:
       relink: true
       path: vimrc
@@ -71,6 +71,9 @@
     ~/Library/LaunchAgents/local.update_dotfiles.plist:
       relink: true
       path: properties/local.update_dotfiles.plist
+    ~/.tmuxinator:
+      relink: true
+      path: tmuxinator/
 
 - shell:
     -
