@@ -50,14 +50,11 @@ if $TERM == '^\%(screen\|xterm-color\)$' && t_Co == 8
   set t_Co=256
 endif
 
-" Powerline Status Line
-" Note - For Powerline to look correct in terminal Vim,
-" Need to set Powerline font in iTerm & set Non-Ascii to 1 point smaller
-"set rtp+=~/.vimbundles/powerline/powerline/bindings/vim
-source /Users/timcmartin/Dotfiles/powerline/powerline/bindings/vim/plugin/powerline.vim
-let g:Powerline_symbols = "fancy"
 set laststatus=2   " Always show the statusline
 set noshowmode
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'airlineish'
 
 " Make Vim awesomer
 set autoindent
