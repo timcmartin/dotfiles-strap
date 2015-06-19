@@ -56,9 +56,6 @@
     ~/.zshrc:
       relink: true
       path: zshrc
-    ~/.crypt_tmux:
-      relink: true
-      path: dotfiles_private/crypt_tmux
     ~/crypt_config.vim:
       relink: true
       path: dotfiles_private/crypt_config.vim
