@@ -62,6 +62,9 @@
     ~/.vimbundles:
       relink: true
       path: vimbundles/
+    ~/.vimbackupdir:
+      relink: true
+      path: vimbackupdir/
     ~/.thymerc:
       relink: true
       path: thymerc

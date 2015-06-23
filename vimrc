@@ -22,6 +22,9 @@ let localleader = '\'
 " Let's make escape better, together.
 inoremap jj <Esc>
 
+" HTTP_CLIENT
+let g:http_client_bind_hotkey = 1
+
 " Convenience mapping of semicolon
 map ; :
 noremap ;; ;
