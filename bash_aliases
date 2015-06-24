@@ -237,3 +237,6 @@ alias clearlogs='rake log:clear'
 
 # Find Postgres
 alias findpg='ps -ax | grep -i postgres'
+
+# Update APIPIE Docs
+alias updatedocs='be rake api:generate_examples'
