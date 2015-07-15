@@ -68,3 +68,6 @@ export PATH=$PATH:"/opt/boxen/homebrew/Cellar/todo-txt/2.10/bin"
 
 export PATH="/opt/boxen/rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# Cloud66 Toolbelt
+export PATH=$PATH:"/Users/timcmartin/.cloud66"
