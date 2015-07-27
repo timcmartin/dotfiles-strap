@@ -100,6 +100,7 @@ set backspace=indent,eol,start
 set mouse=a " sometimes you want a mouse
 set nofoldenable " I rarely use folds
 set title          " Set the title of the window in the terminal to the file
+set titlestring='Powerslave'
 if exists('+colorcolumn')
   set colorcolumn=80 " Color the 80th column differently as a wrapping guide.
 endif
