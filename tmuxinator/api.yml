@@ -53,7 +53,7 @@ windows:
       panes:
         - console:
           - cd ~/src/api
-          - pry
+          - tail -f log/sidekiq.log
         - devlog:
           - cd ~/src/api
           - tail -f log/development.log
