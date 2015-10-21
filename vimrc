@@ -169,6 +169,8 @@ let NERDTreeShowHidden = 0
 " let NERDTreeHijackNetrw = 0
 let NERDTreeHijackNetrw = 1
 let NERDTreeIgnore=['\.$', '\~$']
+" NERDTree Window size
+" let g:NERDTreeWinSize = 40
 
 " clear search
 nmap <silent> ,/ :nohlsearch<CR>
@@ -290,8 +292,8 @@ map <silent> <leader>rh :%s/:\(\w*\)\s*=>\s*\(\w*\)/\1: \2/g<CR>
 " let g:rspec_command = 'call Send_to_Tmux("zeus rspec {spec}\n")'
 " let g:rspec_command = 'call Send_to_Tmux("be zeus rspec {spec}\n")'
 let g:rspec_command = 'call Send_to_Tmux("be rspec {spec}\n")'
-map <leader>t :call RunCurrentSpecFile()<CR>
-map <leader>s :call RunNearestSpec()<CR>
+map <leader>s :call RunCurrentSpecFile()<CR>
+" map <leader>s :call RunNearestSpec()<CR>
 map <leader>l :call RunLastSpec()<CR>
 map <leader>as :call RunAllSpecs()<CR>
 
@@ -396,7 +398,7 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['scss'] }
 
 " vimwiki
-let g:vimwiki_list = [{'path': '~/dropbox/vimwiki/personal'}, {'path': '~/dropbox/vimwiki/house'}, {'path': '~/dropbox/vimwiki/cabin'}, {'path': '~/dropbox/vimwiki/getty'}, {'path': '~/dropbox/vimwiki/travel'}, {'path': '~/dropbox/vimwiki/work', 'ext': '.md'}]
+let g:vimwiki_list = [ {'path': '~/dropbox/vimwiki/dev'}, {'path': '~/dropbox/vimwiki/personal'}, {'path': '~/dropbox/vimwiki/house'}, {'path': '~/dropbox/vimwiki/cabin'}, {'path': '~/dropbox/vimwiki/getty'}, {'path': '~/dropbox/vimwiki/travel'}, {'path': '~/dropbox/vimwiki/work'}, {'path': '~/dropbox/SixSafety/vimwiki/', 'ext': '.md'}]
 
 " More Autocommands
 if has("autocmd")
@@ -482,3 +484,5 @@ nmap  <F8> :TagbarToggle<CR>
 "  %    :  saves and restores the buffer list
 "  n... :  where to save the viminfo files
 set viminfo='10,\"100,:20,%,n~/.viminfo
+
+noremap <Leader>t :noautocmd vimgrep /TODO/j **/*.rb<CR>:cw<CR>

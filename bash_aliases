@@ -185,13 +185,21 @@ alias istocklog='echo : > /Users/tmartin/Code/Getty/istock/codebase/timlog'
 alias timlog='tail -f /Users/tmartin/Code/Getty/istock/codebase/timlog'
 
 # start postgres
-alias postgres='/Applications/Postgres.app/Contents/Versions/9.3/bin/psql -p5432'
+# alias postgres='/Applications/Postgres.app/Contents/Versions/9.3/bin/psql -p5432'
+# ------------------------------------------------------------------
+# database
+# ------------------------------------------------------------------
+alias 'pgstart=pg_ctl -D /opt/boxen/data/postgresql/ -l logfile start'
+alias 'pgstop=pg_ctl -D /opt/boxen/data/postgresql/ stop'
+alias 'pgrestart=pg_ctl -D /opt/boxen/data/postgresql/ restart'
+# ex: pgrestore db_name file_name
+alias 'pgrestore=pg_restore --verbose --clean --no-acl --no-owner -h localhost -d'
 
 # reset memcache
 alias reset-memcache='memcached -u memcached -d -m 30 -l 127.0.0.1 -p 11211'
 
 # cd to wurstwings codebase
-alias wurstwings='cd ~/Code/wurstwings'
+alias wurstwings='cd ~/src/personal/wurstwings'
 
 # start wurstwings redis
 alias wwredis='redis-server /usr/local/etc/redis.conf'
@@ -199,8 +207,11 @@ alias wwredis='redis-server /usr/local/etc/redis.conf'
 # personal: cd dotfiles
 alias dotfiles='cd ~/Dotfiles'
 
-# personal: cd code
-alias mycode='cd ~/Code'
+# personal: cd src/personal
+alias mycode='cd ~/src/personal'
+
+# personal: code directory
+alias src='cd ~/src'
 
 # six safety: cd api
 alias api='cd ~/src/api'
