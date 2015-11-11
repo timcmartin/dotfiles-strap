@@ -100,3 +100,5 @@ function proml {
   PS1="Powerslave: \W $BLUE\$(parse_git_branch) $DEFAULT\$ "
 }
 proml
+
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
