@@ -198,6 +198,7 @@ alias 'pgrestore=pg_restore --verbose --clean --no-acl --no-owner -h localhost -
 # reset memcache
 alias reset-memcache='memcached -u memcached -d -m 30 -l 127.0.0.1 -p 11211'
 
+# CODEBASES
 # cd to wurstwings codebase
 alias wurstwings='cd ~/src/personal/wurstwings'
 
@@ -207,10 +208,13 @@ alias wwredis='redis-server /usr/local/etc/redis.conf'
 # personal: cd dotfiles
 alias dotfiles='cd ~/Dotfiles'
 
+# personal: cabin-monitor
+alias cabin='cd ~/src/personal/cabin-monitor'
+
 # personal: cd src/personal
 alias mycode='cd ~/src/personal'
 
-# personal: code directory
+# personal: src code directory
 alias src='cd ~/src'
 
 # six safety: cd api

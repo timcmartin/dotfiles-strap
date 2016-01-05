@@ -1,7 +1,7 @@
 # ~/.tmuxinator/wurstwings.yml
 
 name: wurstwings
-root: ~/Code/wurstwings/
+root: ~/src/personal/wurstwings/
 
 # Optional tmux socket
 # socket_name: foo
@@ -11,7 +11,7 @@ root: ~/Code/wurstwings/
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
 # pre_window: rbenv shell 2.0.0-p247
-pre_window: cd ~/Code/wurstwings/
+pre_window: cd ~/src/personal/wurstwings/
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -27,9 +27,8 @@ windows:
   - terminal:
       layout: even-horizontal
       panes:
-        - guard:
-          - cd ~/Code/wurstwings/
-          - guard
+        - mails:
+          - cd ~/Code/wurstwings/tmp/mails
         - git:
           - cd ~/Code/wurstwings/
           - gst
@@ -44,7 +43,7 @@ windows:
           - redis-cli monitor
         - rails:
           - cd ~/Code/wurstwings
-          - rails s
+          - foreman start
   - logs:
       layout: even-horizontal
       panes:

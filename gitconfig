@@ -37,7 +37,7 @@
   status = auto
   ui = auto
 [core]
-  excludesfile = /opt/boxen/config/git/gitignore
+	excludesfile = /opt/boxen/config/git/gitignore
   editor = vim
   whitespace = warn
 [diff]
@@ -75,7 +75,7 @@
   enabled = true
 [user]
 	name = tmartin
-	email = timcmartin@gmail.com
+	email = tmartin@sixsafetysystems.com
 [http]
   sslVerify = false
 [credential]
@@ -86,10 +86,10 @@
 [init]
 	templatedir = ~/.git_template
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 	trustExitCode = true
 
 [hub]
