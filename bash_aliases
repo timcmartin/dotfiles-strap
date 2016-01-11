@@ -124,6 +124,7 @@ function sr {
 function sdb {
   rails_command "dbconsole" "$@"
 }
+alias railsservers='lsof -wni tcp:5000'
 
 # Bundle Commands
 alias be='bundle exec'
