@@ -230,18 +230,6 @@ alias ourboxen='cd /opt/boxen/repo'
 # update submodules
 alias updatesubs='git submodule foreach --recursive git fetch'
 
-# tail API-Sandbox log
-alias tailapi='cx tail -s "API-Sandbox" -e staging Dove staging.log'
-
-# tail UI-Sandbox log
-alias tailui='cx tail -s "UI-Sandbox" -e staging Dolphin staging.log'
-
-# ssh API-Sandbox
-alias sshapi='cx ssh -s "API-Sandbox" -e staging Dove'
-
-# ssh UI-Sandbox
-alias sshui='cx ssh -s "UI-Sandbox" -e staging Dolphin'
-
 # Start Redis
 # Use redisup
 
@@ -259,3 +247,22 @@ alias updatedocs='be rake api:generate_examples'
 
 # Geeknote
 alias geeknote='python ~/src/community/geeknote/geeknote/geeknote.py'
+
+# SIXSAFETY
+# tail API-Production-TO log
+alias tailprod='cx tail -s "API-Production-TO" -e production Raccoon production.log'
+
+# tail API-Sandbox log
+alias tailapi='cx tail -s "API-Sandbox" -e staging Cricket staging.log'
+
+# tail UI-Sandbox log
+alias tailui='cx tail -s "UI-Sandbox" -e staging Dolphin staging.log'
+
+# ssh API-Production-TO
+alias sshprod='cx ssh -s "API-Production-TO" -e production Raccoon'
+
+# ssh API-Sandbox
+alias sshapi='cx ssh -s "API-Sandbox" -e staging Cricket'
+
+# ssh UI-Sandbox
+alias sshui='cx ssh -s "UI-Sandbox" -e staging Dolphin'

@@ -398,7 +398,7 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['scss'] }
 
 " vimwiki
-let g:vimwiki_list = [ {'path': '~/dropbox/vimwiki/dev'}, {'path': '~/dropbox/vimwiki/personal'}, {'path': '~/dropbox/vimwiki/house'}, {'path': '~/dropbox/vimwiki/cabin'}, {'path': '~/dropbox/vimwiki/getty'}, {'path': '~/dropbox/vimwiki/travel'}, {'path': '~/dropbox/vimwiki/work'}, {'path': '~/dropbox/SixSafety/vimwiki/', 'ext': '.md'}]
+let g:vimwiki_list = [ {'path': '~/dropbox/vimwiki/recipes'}, {'path': '~/dropbox/vimwiki/dev'}, {'path': '~/dropbox/vimwiki/personal'}, {'path': '~/dropbox/vimwiki/house'}, {'path': '~/dropbox/vimwiki/cabin'}, {'path': '~/dropbox/vimwiki/getty'}, {'path': '~/dropbox/vimwiki/travel'}, {'path': '~/dropbox/vimwiki/work'}, {'path': '~/dropbox/SixSafety/vimwiki/', 'ext': '.md'}]
 
 " More Autocommands
 if has("autocmd")
@@ -486,3 +486,12 @@ nmap  <F8> :TagbarToggle<CR>
 set viminfo='10,\"100,:20,%,n~/.viminfo
 
 noremap <Leader>t :noautocmd vimgrep /TODO/j **/*.rb<CR>:cw<CR>
+
+" Windowswap
+let g:windowswap_map_keys = 0 "prevent default bindings
+nnoremap <silent> <leader>yw :call WindowSwap#MarkWindowSwap()<CR>
+nnoremap <silent> <leader>pw :call WindowSwap#DoWindowSwap()<CR>
+nnoremap <silent> <leader>wm :call WindowSwap#EasyWindowSwap()<CR>
+
+" Switch
+let g:switch_mapping = "-"

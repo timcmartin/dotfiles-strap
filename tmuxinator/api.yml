@@ -41,7 +41,7 @@ windows:
           - redisup
         - sidekiq:
           - cd ~/src/api
-          - bundle exec sidekiq ... -L log/sidekiq.log
+          - bundle exec sidekiq
         - redis-monitor:
           - cd ~/src/api
           - redis-cli monitor

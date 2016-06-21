@@ -6,6 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
+# ZSH_THEME="honukai"
 ZSH_THEME="muse"
 #ZSH_THEME="tim"
 
@@ -65,9 +66,9 @@ export PATH=/usr/local/sbin:$PATH
 # todo.txt
 export PATH=$PATH:"/opt/boxen/homebrew/Cellar/todo-txt/2.10/bin"
 
-
-export PATH="/opt/boxen/rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+export PATH="/opt/boxen/rbenv/bin:$PATH"
+export PATH="/opt/rubies/2.3.0/lib/ruby/gems/2.3.0/bundler/gems:$PATH"
 
 # Cloud66 Toolbelt
 export PATH=$PATH:"/Users/timcmartin/.cloud66"

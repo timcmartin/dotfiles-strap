@@ -1,7 +1,3 @@
-export PATH=/usr/local/bin:$PATH
-export PATH=/usr/local/sbin:$PATH
-export PATH=~/bin:$PATH
-
 [ -f "$HOME/.bash_profile.local" ] && . "$HOME/.bash_profile.local"
 [ -f "$HOME/.bash_aliases" ] && . "$HOME/.bash_aliases"
 
@@ -65,6 +61,12 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+eval "$(rbenv init -)"
+
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH=~/bin:$PATH
 
 # Add Vagrant to PATH
 PATH=$PATH:/opt/vagrant/bin
