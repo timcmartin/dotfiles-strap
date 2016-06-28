@@ -269,3 +269,6 @@ alias sshapi='cx ssh -s "API-Sandbox" -e staging Cricket'
 
 # ssh UI-Sandbox
 alias sshui='cx ssh -s "UI-Sandbox" -e staging Dolphin'
+
+# TMUX Fix
+alias mux='tmuxinator'
