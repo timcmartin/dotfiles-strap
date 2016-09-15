@@ -272,3 +272,12 @@ alias sshui='cx ssh -s "UI-Sandbox" -e staging Dolphin'
 
 # TMUX Fix
 alias mux='tmuxinator'
+
+# Pause Sonos
+alias pause_sonos='cd /Users/timcmartin/src/personal/sonos && ruby sonos-pause.rb'
+
+# Play Sonos
+alias play_sonos='cd /Users/timcmartin/src/personal/sonos && ruby sonos-play.rb'
+
+# Thor - npm command line
+alias thorcli='/opt/nodes/4.5.0/lib/node_modules/thor/bin/thor'
