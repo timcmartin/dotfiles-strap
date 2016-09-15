@@ -250,7 +250,7 @@ alias geeknote='python ~/src/community/geeknote/geeknote/geeknote.py'
 
 # SIXSAFETY
 # tail API-Production-TO log
-alias tailprod='cx tail -s "API-Production-TO" -e production Raccoon production.log'
+alias tailprod='cx tail -s "API-Production" -e production Drake production.log'
 
 # tail API-Sandbox log
 alias tailapi='cx tail -s "API-Sandbox" -e staging Cricket staging.log'
