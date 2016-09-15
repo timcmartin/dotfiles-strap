@@ -249,26 +249,22 @@ alias updatedocs='be rake api:generate_examples'
 alias geeknote='python ~/src/community/geeknote/geeknote/geeknote.py'
 
 # SIXSAFETY
-# tail API-Production-TO log
-alias tailprod='cx tail -s "API-Production" -e production Drake production.log'
+# tail API
+alias tailapiprod='cx tail -s "API-Production" -e production Drake production.log'
+alias tailapistaging='cx tail -s "API-Sandbox" -e staging Cricket staging.log'
 
-# tail API-Sandbox log
-alias tailapi='cx tail -s "API-Sandbox" -e staging Cricket staging.log'
+# ssh API
+alias sshapiprod='cx ssh -s "API-Production" -e production Drake'
+alias sshapioldprod='cx ssh -s "API-Production-TO" -e production Raccoon'
+alias sshapistaging='cx ssh -s "API-Sandbox" -e staging Cricket'
 
 # tail UI-Sandbox log
-alias tailui='cx tail -s "UI-Sandbox" -e staging Dolphin staging.log'
-
-# ssh API-Production-TO
-alias sshprod='cx ssh -s "API-Production" -e production Drake'
-
-# ssh old API-Production-TO
-alias ssholdprod='cx ssh -s "API-Production-TO" -e production Raccoon'
-
-# ssh API-Sandbox
-alias sshapi='cx ssh -s "API-Sandbox" -e staging Cricket'
+alias tailuistaging='cx tail -s "UI-Sandbox" -e staging Dolphin staging.log'
+alias tailuiprod='cx tail -s "UI-Production-TO" -e production Panther production.log'
 
 # ssh UI-Sandbox
-alias sshui='cx ssh -s "UI-Sandbox" -e staging Dolphin'
+alias sshuistaging='cx ssh -s "UI-Sandbox" -e staging Dolphin'
+alias sshuistaging='cx ssh -s "UI-Production-TO" -e production Panther'
 
 # TMUX Fix
 alias mux='tmuxinator'
