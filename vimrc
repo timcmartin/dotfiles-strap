@@ -48,6 +48,7 @@ colorscheme jellybeans-joel
 " colorscheme darkburn
 " colorscheme twilight256
 filetype plugin indent on
+filetype plugin on
 
 if $TERM == '^\%(screen\|xterm-color\)$' && t_Co == 8
   set t_Co=256
@@ -399,6 +400,26 @@ let g:syntastic_mode_map = { 'mode': 'active',
 
 " vimwiki
 let g:vimwiki_list = [ {'path': '~/dropbox/vimwiki/recipes'}, {'path': '~/dropbox/vimwiki/dev'}, {'path': '~/dropbox/vimwiki/personal'}, {'path': '~/dropbox/vimwiki/house'}, {'path': '~/dropbox/vimwiki/cabin'}, {'path': '~/dropbox/vimwiki/getty'}, {'path': '~/dropbox/vimwiki/travel'}, {'path': '~/dropbox/vimwiki/work'}, {'path': '~/dropbox/SixSafety/vimwiki/', 'ext': '.md'}]
+let g:vimwiki_hl_headers = 1
+
+au BufRead,BufNewFile *.wiki set filetype=vimwiki
+:autocmd FileType vimwiki map <leader>d :VimwikiMakeDiaryNote
+
+" Calendar
+function! ToggleCalendar()
+  execute ":Calendar"
+  if exists("g:calendar_open")
+    if g:calendar_open == 1
+      execute "q"
+      unlet g:calendar_open
+    else
+      g:calendar_open = 1
+    end
+  else
+    let g:calendar_open = 1
+  end
+endfunction
+:autocmd FileType vimwiki map <leader>c :call ToggleCalendar()
 
 " More Autocommands
 if has("autocmd")
