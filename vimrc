@@ -164,6 +164,7 @@ let NERDChristmasTree = 1
 let NERDTreeHighlightCursorline = 1
 " Make bookmarks visible
 let NERDTreeShowBookmarks = 1
+let g:NERDTreeBookmarksFile = '/Users/timcmartin/Dotfiles/NERDTreeBookmarks'
 " Show hidden files
 let NERDTreeShowHidden = 0
 " Don't hijack NETRW
@@ -399,8 +400,9 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['scss'] }
 
 " vimwiki
-let g:vimwiki_list = [ {'path': '~/dropbox/vimwiki/recipes'}, {'path': '~/dropbox/vimwiki/dev'}, {'path': '~/dropbox/vimwiki/personal'}, {'path': '~/dropbox/vimwiki/house'}, {'path': '~/dropbox/vimwiki/cabin'}, {'path': '~/dropbox/vimwiki/getty'}, {'path': '~/dropbox/vimwiki/travel'}, {'path': '~/dropbox/vimwiki/work'}, {'path': '~/dropbox/SixSafety/vimwiki/', 'ext': '.md'}]
+let g:vimwiki_list = [ {'path': '~/Dropbox/vimwiki/recipes'}, {'path': '~/Dropbox/vimwiki/dev'}, {'path': '~/Dropbox/vimwiki/personal'}, {'path': '~/Dropbox/vimwiki/house'}, {'path': '~/Dropbox/vimwiki/cabin'}, {'path': '~/Dropbox/vimwiki/getty'}, {'path': '~/Dropbox/vimwiki/travel'}, {'path': '~/Dropbox/vimwiki/work'}, {'path': '~/Dropbox/SixSafety/vimwiki/', 'ext': '.md'}]
 let g:vimwiki_hl_headers = 1
+let g:vimwiki_nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'ruby': 'rb', 'cmd': 'sh'}
 
 au BufRead,BufNewFile *.wiki set filetype=vimwiki
 :autocmd FileType vimwiki map <leader>d :VimwikiMakeDiaryNote
