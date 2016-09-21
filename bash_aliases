@@ -257,6 +257,7 @@ alias tailapistaging='cx tail -s "API-Sandbox" -e staging Cricket staging.log'
 alias sshapiprod='cx ssh -s "API-Production" -e production Drake'
 alias sshapioldprod='cx ssh -s "API-Production-TO" -e production Raccoon'
 alias sshapistaging='cx ssh -s "API-Sandbox" -e staging Cricket'
+alias sshproddb='cx ssh -s "API-Production" -e production Crayfish'
 
 # tail UI-Sandbox log
 alias tailuistaging='cx tail -s "UI-Sandbox" -e staging Dolphin staging.log'
