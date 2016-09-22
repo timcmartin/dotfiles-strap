@@ -60,11 +60,16 @@ windows:
         - testlog:
           - cd ~/src/api
           - tail -f log/test.log
-  - ui:
+  - ui-editor:
+      layout: main-vertical
+      panes:
+        - cd ~/src/ui
+        - vim
+  - ui-console:
       layout: even-horizontal
       panes:
-        - ui-editor:
+        - rails:
           - cd ~/src/ui
-          - vim
-        - ui-console:
+          - rails s
+        - git:
           - cd ~/src/ui

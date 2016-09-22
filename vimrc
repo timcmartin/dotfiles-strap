@@ -518,3 +518,7 @@ nnoremap <silent> <leader>wm :call WindowSwap#EasyWindowSwap()<CR>
 
 " Switch
 let g:switch_mapping = "-"
+
+" Date & Time
+:nnoremap <F5> "=strftime("%b %d, %Y")<CR>P
+:inoremap <F5> <C-R>=strftime("%b %d, %Y")<CR>
