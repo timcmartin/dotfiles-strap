@@ -52,7 +52,8 @@ DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails ruby sublime brew vagrant postgres redis-cli bundler golang git git-flow git-extras last-working-dir osx ssh-agent web-search zsh-syntax-highlighting tmuxinator)
+plugins=(rails ruby sublime brew vagrant postgres redis-cli bundler golang git git-flow git-extras last-working-dir osx ssh-agent web-search zsh-syntax-highlighting tmuxinator zsh-completions)
+autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
