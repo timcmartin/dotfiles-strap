@@ -74,6 +74,9 @@
     ~/.tmuxinator:
       relink: true
       path: tmuxinator/
+    ~/.pryrc:
+      relink: true
+      path: pryrc/
 
 - shell:
     -
