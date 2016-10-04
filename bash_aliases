@@ -1,5 +1,4 @@
 # Convenience Commands
-alias propane_font='vi +49 /Users/randland/Library/Application\ Support/Propane/styles/cf_chat.css'
 alias hosts='sudo vi /etc/hosts'
 alias pizza='be slice -a thin'
 alias cain='be slice -a thin candidate'
@@ -97,6 +96,7 @@ alias redisup='redis-server ~/Dotfiles/redis.conf'
 alias rakedbtestkill='RAILS_ENV=test rake db:drop && RAILS_ENV=test rake db:create && RAILS_ENV=test rake db:migrate'
 alias rb='ruby'
 alias testenv='RAILS_ENV=test'
+alias pryc='pry -r ./config/environment'
 
 function rails_command {
   local cmd=$1
