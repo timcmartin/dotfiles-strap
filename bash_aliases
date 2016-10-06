@@ -15,6 +15,7 @@ alias rebash='START_DIR=`pwd`;cd ..;source ~/.bash_aliases;cd $START_DIR; c; l'
 alias v='vim'
 alias v.='vim .'
 alias vimupdate='cd ~/.vimbundles;find . -maxdepth 1 -type d -exec sh -c "'"(cd {} && git pull)"'" "'";"'"'
+alias vimrc='vim ~/.vimrc'
 
 # Pickler Commands
 alias curtest='cr cucumber FEATURE=$CURTEST'
