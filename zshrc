@@ -73,3 +73,8 @@ export PATH="/opt/rubies/2.3.0/lib/ruby/gems/2.3.0/bundler/gems:$PATH"
 
 # Cloud66 Toolbelt
 export PATH=$PATH:"/Users/timcmartin/.cloud66"
+
+# added by travis gem
+[ -f /Users/timcmartin/.travis/travis.sh ] && source /Users/timcmartin/.travis/travis.sh
+
+fpath=(~/.zsh $fpath)
