@@ -95,6 +95,7 @@ alias pgup='pg_ctl -w -D /usr/local/var/postgres -l /usr/local/var/postgres/serv
 alias pgdown='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias redisup='redis-server ~/Dotfiles/redis.conf'
 alias rakedbtestkill='RAILS_ENV=test rake db:drop && RAILS_ENV=test rake db:create && RAILS_ENV=test rake db:migrate'
+alias rakedbreset='rake db:migrate:reset'
 alias rb='ruby'
 alias testenv='RAILS_ENV=test'
 alias pryc='pry -r ./config/environment'
