@@ -39,6 +39,11 @@ windows:
         - redis:
           - cd ~/src/api
           - redisup
+          - redis-cli
+        - testredis:
+          - cd ~/src/api
+          - redistestup
+          - redis-cli -p 10000
         - sidekiq:
           - cd ~/src/api
           - bundle exec sidekiq
