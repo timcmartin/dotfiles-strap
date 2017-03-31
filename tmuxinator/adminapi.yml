@@ -1,6 +1,6 @@
-# ~/.tmuxinator/apiui.yml
+# ~/.tmuxinator/adminapi.yml
 
-name: apiui
+name: adminapi
 root: ~/src/api/
 
 # Optional tmux socket
@@ -11,7 +11,7 @@ root: ~/src/api/
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
 # pre_window: rbenv shell 2.0.0-p247
-# pre_window: cd ~/src/api
+pre_window: cd ~/src/api
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -23,9 +23,7 @@ windows:
   - api-editor:
       layout: main-vertical
       panes:
-        - vim:
-          - cd ~/src/api
-          - vim
+        - vim
   - api-terminal:
       layout: even-horizontal
       panes:
@@ -40,7 +38,15 @@ windows:
       panes:
         - redis:
           - cd ~/src/api
-          - redis-server
+          - redisup
+          - redis-cli
+        - testredis:
+          - cd ~/src/api
+          - redistestup
+          - redis-cli -p 10000
+        - sidekiq:
+          - cd ~/src/api
+          - bundle exec sidekiq
         - redis-monitor:
           - cd ~/src/api
           - redis-cli monitor
@@ -50,9 +56,9 @@ windows:
   - api-logs:
       layout: even-horizontal
       panes:
-        - git:
+        - console:
           - cd ~/src/api
-          - gst
+          - tail -f log/sidekiq.log
         - devlog:
           - cd ~/src/api
           - tail -f log/development.log
@@ -62,27 +68,15 @@ windows:
   - ui-editor:
       layout: main-vertical
       panes:
-        - vim:
-          - cd ~/src/ui
+        - editor:
+          - cd ~/src/luci-ui
           - vim
-  - ui-server:
-      layout: even-horizontal
-      panes:
-        - guard:
-          - cd ~/src/ui
-          - guard
-        - rails:
-          - cd ~/src/ui
-          - rails s
-  - ui-logs:
+  - ui-console:
       layout: even-horizontal
       panes:
         - git:
-          - cd ~/src/ui
-          - gst
-        - devlog:
-          - cd ~/src/ui
-          - tail -f log/development.log
-        - testlog:
-          - cd ~/src/ui
-          - tail -f log/test.log
+          - cd ~/src/luci-ui
+          - npm install
+        - server:
+          - cd ~/src/luci-ui
+          - npm run dev
