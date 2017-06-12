@@ -107,3 +107,6 @@ proml
 
 # added by travis gem
 [ -f /Users/timcmartin/.travis/travis.sh ] && source /Users/timcmartin/.travis/travis.sh
+
+### Added by the Bluemix CLI
+source /usr/local/Bluemix/bx/bash_autocomplete

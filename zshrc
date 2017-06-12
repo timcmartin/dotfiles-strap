@@ -79,3 +79,6 @@ export PATH=$PATH:"/Users/timcmartin/.cloud66"
 [ -f /Users/timcmartin/.travis/travis.sh ] && source /Users/timcmartin/.travis/travis.sh
 
 fpath=(~/.zsh $fpath)
+
+### Added by the Bluemix CLI
+source /usr/local/Bluemix/bx/zsh_autocomplete
