@@ -231,6 +231,9 @@ alias ui='cd ~/src/ui'
 # six safety boxen repo: cd repo
 alias ourboxen='cd /opt/boxen/repo'
 
+# workdev
+alias workdev='cd /src/personal/workdev'
+
 # update submodules
 alias updatesubs='git submodule foreach --recursive git fetch'
 

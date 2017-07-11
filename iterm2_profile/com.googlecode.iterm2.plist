@@ -418,6 +418,8 @@
 	<integer>0</integer>
 	<key>HotkeyCode</key>
 	<integer>0</integer>
+	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
 	<key>HotkeyModifiers</key>
 	<integer>0</integer>
 	<key>IRMemory</key>
@@ -433,7 +435,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Dotfiles</string>
+	<string>~/Dotfiles/iterm2_profile</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
@@ -475,11 +477,11 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>516 421 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>410 364 620 392 0 0 1440 877 </string>
+	<string>530 477 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 215 796 473 0 0 1440 877 </string>
+	<string>1909 528 796 473 1440 231 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 10 1438 867 0 0 1440 877 </string>
+	<string>0 4 1680 1023 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>30 77 1410 727 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_FE4B4CB6-AD6D-4BAE-8BD9-BC120E700CA0</key>
@@ -3557,7 +3559,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-02-23T02:49:23Z</date>
+	<date>2017-06-28T05:14:26Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -3603,6 +3605,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.14</string>
+	<string>3.1.beta.5</string>
 </dict>
 </plist>
