@@ -23,7 +23,7 @@ windows:
   - api-editor:
       layout: main-vertical
       panes:
-        - vim -O ~/Dropbox/vimwiki/work/Kanban.wiki ~/Dropbox/vimwiki/work/diary/diary.wiki
+        - vimwork
   - api-terminal:
       layout: even-horizontal
       panes:
@@ -65,9 +65,12 @@ windows:
         - devlog:
           - cd ~/src/api
           - tail -f log/development.log
-        - testlog:
+        - open:
           - cd ~/src/api
-          - tail -f log/test.log
+          - tail -f log/development.log | grep 'WEBSOCKET_OPENED'
+        - closed:
+          - cd ~/src/api
+          - tail -f log/development.log | grep 'WEBSOCKET_CLOSED'
   - ui-editor:
       layout: main-vertical
       panes:

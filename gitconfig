@@ -74,8 +74,8 @@
 [rerere]
   enabled = true
 [user]
-	name = tmartin
-	email = tmartin@sixsafetysystems.com
+	name = Tim Martin
+	email = timcmartin@gmail.com
 [http]
   sslVerify = false
 [credential]

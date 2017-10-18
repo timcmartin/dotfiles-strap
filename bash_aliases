@@ -16,6 +16,7 @@ alias v='vim'
 alias v.='vim .'
 alias vimupdate='cd ~/.vimbundles;find . -maxdepth 1 -type d -exec sh -c "'"(cd {} && git pull)"'" "'";"'"'
 alias vimrc='vim ~/.vimrc'
+alias vimwork='vim -O ~/Dropbox/vimwiki/work/Kanban.wiki ~/Dropbox/vimwiki/work/diary/diary.wiki'
 
 # Pickler Commands
 alias curtest='cr cucumber FEATURE=$CURTEST'

@@ -82,3 +82,5 @@ fpath=(~/.zsh $fpath)
 
 ### Added by the Bluemix CLI
 source /usr/local/Bluemix/bx/zsh_autocomplete
+
+eval `docker-machine env 2>/dev/null`

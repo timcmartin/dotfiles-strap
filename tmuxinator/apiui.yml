@@ -1,4 +1,4 @@
-# ~/.tmuxinator/api.yml
+# ~/.tmuxinator/apiu.yml
 
 name: api
 root: ~/src/api/
@@ -65,3 +65,18 @@ windows:
         - devlog:
           - cd ~/src/api
           - tail -f log/development.log
+  - ui-editor:
+      layout: main-vertical
+      panes:
+        - editor:
+          - cd ~/src/ui
+          - vim
+  - ui-console:
+      layout: even-horizontal
+      panes:
+        - rails:
+          - cd ~/src/ui
+          - rails s
+        - git:
+          - cd ~/src/ui
+ tail -f log/development.log
