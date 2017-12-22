@@ -185,6 +185,9 @@ set smartcase "be case sensitive if search has cap letter
 set gdefault " /g flag on :s substitutions to replace all matches in a line:
 nnoremap <leader><space> :noh<cr>  " remove highlight from search matches
 
+" Search for highlighted text with //
+vnoremap // y/<C-R>"<CR>
+
 " Copy current Vim paste register to clipboard
 map <F2> :PBCopy<cr>
 " Toggle between paste and nopaste, shows which one is active
