@@ -64,6 +64,10 @@ zrcl="$HOME/.zshrc.local"
 source ~/.profile
 export PATH=/usr/local/sbin:$PATH
 
+DUMMY='dummy'
+PROJECT='monit'
+tmux list-sessions || ( tmux new -d -s $DUMMY && tmuxinator start $PROJECT )
+
 # todo.txt
 export PATH=$PATH:"/opt/boxen/homebrew/Cellar/todo-txt/2.10/bin"
 
@@ -84,3 +88,7 @@ fpath=(~/.zsh $fpath)
 source /usr/local/Bluemix/bx/zsh_autocomplete
 
 eval `docker-machine env 2>/dev/null`
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

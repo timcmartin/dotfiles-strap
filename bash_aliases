@@ -238,6 +238,9 @@ alias workdev='cd /src/personal/workdev'
 # update submodules
 alias updatesubs='git submodule foreach --recursive git fetch'
 
+# vimwiki: recipes-monitor
+alias recipes='cd ~/Dropbox/vimwiki/recipes/book'
+
 # Start Redis
 # Use redisup
 

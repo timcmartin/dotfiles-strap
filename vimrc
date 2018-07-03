@@ -8,6 +8,9 @@ endif
 behave xterm
 set nocompatible
 
+set encoding=utf-8
+scriptencoding utf-8
+
 " IndentLine Plugin Color
 let g:indentLine_color_term = 239
 
@@ -87,7 +90,6 @@ set wildmode=longest,list,full
 set wildignore+=*.o,*.obj,.git,tmp/**,public/uploads/**
 set autoread " auto read file if it has changed outside of vim
 set cmdheight=2    " Make the command area two lines high
-set encoding=utf-8
 " allow cursor keys to move from line to line when going from left to right,
 " regardless of whether in or not in insert mode
 set whichwrap=b,s,h,l,<,>,[,]
