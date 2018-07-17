@@ -39,7 +39,8 @@ nnoremap <leader>h *<C-O>
 syntax on
 set t_Co=256
 set background=dark
-colorscheme jellybeans-joel
+colorscheme jellybeans-tim
+" colorscheme jellybeans-joel
 " colorscheme Jellybeans
 " colorscheme molokai
 " colorscheme grb256
@@ -58,7 +59,7 @@ set laststatus=2   " Always show the statusline
 set noshowmode
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'airlineish'
+let g:airline_theme = 'powerlineish'
 
 " Make Vim awesomer
 set autoindent
