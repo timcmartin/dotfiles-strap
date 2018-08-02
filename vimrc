@@ -41,13 +41,8 @@ set t_Co=256
 set background=dark
 colorscheme jellybeans-tim
 " colorscheme jellybeans-joel
-" colorscheme Jellybeans
-" colorscheme molokai
-" colorscheme grb256
-" colorscheme railscasts
-" colorscheme railscasts2
-" colorscheme darkburn
-" colorscheme twilight256
+" colorscheme jellybeans
+" colorscheme solarized
 filetype plugin indent on
 filetype plugin on
 
@@ -144,6 +139,8 @@ command! -nargs=0 RebuildTagsFile call s:RebuildTagsFile()
 
 set tags=./tags;
 map <Leader>rt :RebuildTagsFile<cr>
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " Run rake from Rails files
 autocmd User Rails nnoremap <buffer> <D-r> :<C-U>Rake<CR>
@@ -403,7 +400,7 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['scss'] }
 
 " vimwiki
-let g:vimwiki_list = [ {'path': '~/Dropbox/vimwiki/recipes'}, {'path': '~/Dropbox/vimwiki/dev'}, {'path': '~/Dropbox/vimwiki/guitarrig'}, {'path': '~/Dropbox/vimwiki/personal'}, {'path': '~/Dropbox/vimwiki/house'}, {'path': '~/Dropbox/vimwiki/cabin'}, {'path': '~/Dropbox/vimwiki/getty'}, {'path': '~/Dropbox/vimwiki/travel'}, {'path': '~/Dropbox/vimwiki/work'}, {'path': '~/Dropbox/SixSafety/vimwiki/', 'ext': '.md'}]
+let g:vimwiki_list = [ {'path': '~/Dropbox/vimwiki/getty/'}, {'path': '~/Dropbox/vimwiki/cabin/'}, {'path': '~/Dropbox/vimwiki/dev/'}, {'path': '~/Dropbox/vimwiki/guitarrig/'}, {'path': '~/Dropbox/vimwiki/house/'}, {'path': '~/Dropbox/vimwiki/personal/'}, {'path': '~/Dropbox/vimwiki/recipes/'}, {'path': '~/Dropbox/vimwiki/sixsafety/'}, {'path': '~/Dropbox/vimwiki/temp/'}, {'path': '~/Dropbox/vimwiki/travel/'} ]
 let g:vimwiki_hl_headers = 1
 let g:vimwiki_nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'ruby': 'rb', 'cmd': 'sh'}
 
@@ -525,3 +522,19 @@ let g:switch_mapping = "-"
 " Date & Time
 :nnoremap <F5> "=strftime("%b %d, %Y")<CR>P
 :inoremap <F5> <C-R>=strftime("%b %d, %Y")<CR>
+
+" Typescript for Angular
+let g:typescript_compiler_binary = 'tsc'
+let g:typescript_compiler_options = ''
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
+
+" Closetags
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
+
+" Auto-pairs
+au Filetype vimwiki let b:autopairs_loaded=1
+au Filetype ruby let b:autopairs_loaded=1
+
+" Javascript.vim
+let g:used_javascript_libs = 'jquery, angularjs, angularui, angularuirouter, jasmine'

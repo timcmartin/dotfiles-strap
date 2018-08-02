@@ -1,3 +1,5 @@
+[include]
+	path = ~/.gitconfig-user
 [alias]
   d = difftool
   br = branch
@@ -73,9 +75,6 @@
   autosquash = true
 [rerere]
   enabled = true
-[user]
-	name = Tim Martin
-	email = timcmartin@gmail.com
 [http]
   sslVerify = false
 [credential]
